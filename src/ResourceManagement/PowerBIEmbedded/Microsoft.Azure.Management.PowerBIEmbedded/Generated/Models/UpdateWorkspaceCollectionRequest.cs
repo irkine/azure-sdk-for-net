@@ -21,7 +21,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// Initializes a new instance of the UpdateWorkspaceCollectionRequest
         /// class.
         /// </summary>
-        public UpdateWorkspaceCollectionRequest(IList<object> tags = default(IList<object>), AzureSku sku = default(AzureSku))
+        public UpdateWorkspaceCollectionRequest(IDictionary<string, string> tags = default(IDictionary<string, string>), AzureSku sku = default(AzureSku))
         {
             Tags = tags;
             Sku = sku;
@@ -30,7 +30,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "tags")]
-        public IList<object> Tags { get; set; }
+        public IDictionary<string, string> Tags { get; set; }
 
         /// <summary>
         /// </summary>

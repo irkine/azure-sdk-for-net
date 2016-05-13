@@ -26,7 +26,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         }
 
         /// <summary>
-        /// The operation name
+        /// Operation name
         /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }

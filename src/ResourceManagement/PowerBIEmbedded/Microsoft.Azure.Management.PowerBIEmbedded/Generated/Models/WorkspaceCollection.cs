@@ -19,7 +19,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// Initializes a new instance of the WorkspaceCollection class.
         /// </summary>
-        public WorkspaceCollection(string id = default(string), string name = default(string), string type = default(string), string location = default(string), IList<object> tags = default(IList<object>), AzureSku sku = default(AzureSku), object properties = default(object))
+        public WorkspaceCollection(string id = default(string), string name = default(string), string type = default(string), string location = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), AzureSku sku = default(AzureSku), object properties = default(object))
         {
             Id = id;
             Name = name;
@@ -57,7 +57,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "tags")]
-        public IList<object> Tags { get; set; }
+        public IDictionary<string, string> Tags { get; set; }
 
         /// <summary>
         /// </summary>

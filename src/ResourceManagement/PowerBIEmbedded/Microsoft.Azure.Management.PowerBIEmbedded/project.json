@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-preview",
+  "version": "1.0.3-preview",
   "description": "Microsoft Azure Management Power BI Embedded Library",
   "authors": [ "Microsoft" ],
   "tags": [ "Microsoft Azure Power BI Embedded management", "Power BI Embedded", "Power BI Embedded management", "REST HTTP client", "windowsazureofficial" ],

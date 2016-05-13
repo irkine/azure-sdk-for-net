@@ -9,17 +9,17 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
     using Microsoft.Rest.Serialization;
     using Microsoft.Rest.Azure;
 
-    public partial class AzureArrayWorkspace
+    public partial class WorkspaceList
     {
         /// <summary>
-        /// Initializes a new instance of the AzureArrayWorkspace class.
+        /// Initializes a new instance of the WorkspaceList class.
         /// </summary>
-        public AzureArrayWorkspace() { }
+        public WorkspaceList() { }
 
         /// <summary>
-        /// Initializes a new instance of the AzureArrayWorkspace class.
+        /// Initializes a new instance of the WorkspaceList class.
         /// </summary>
-        public AzureArrayWorkspace(IList<Workspace> value = default(IList<Workspace>))
+        public WorkspaceList(IList<Workspace> value = default(IList<Workspace>))
         {
             Value = value;
         }

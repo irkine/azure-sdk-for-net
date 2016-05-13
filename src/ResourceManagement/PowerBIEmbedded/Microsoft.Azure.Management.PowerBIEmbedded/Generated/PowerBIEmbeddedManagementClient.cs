@@ -271,14 +271,14 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             DeserializationSettings.Converters.Add(new CloudErrorJsonConverter()); 
         }    
         /// <summary>
-        /// The Get Power BI Workspace Collection operation retrieves an existing
+        /// The **Get Power BI Workspace Collection** operation retrieves an existing
         /// Power BI Workspace Collection.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -462,16 +462,17 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Create Power BI Workspace Collection operation creates a new Power BI
-        /// Workspace Collection with the specified properties. A Power BI Workspace
-        /// Collection contains one or more Power BI Workspaces and can be used to
-        /// provision keys that provide API access to those Power BI Workspaces.
+        /// The **Create Power BI Workspace Collection** operation creates a new Power
+        /// BI Workspace Collection with the specified properties. A Power BI
+        /// Workspace Collection contains one or more Power BI Workspaces and can be
+        /// used to provision keys that provide API access to those Power BI
+        /// Workspaces.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -601,7 +602,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 201 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -644,7 +645,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 _result.RequestId = _httpResponse.Headers.GetValues("x-ms-request-id").FirstOrDefault();
             }
             // Deserialize Response
-            if ((int)_statusCode == 201)
+            if ((int)_statusCode == 200)
             {
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
@@ -669,14 +670,14 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Update Power BI Workspace Collection operation updates an existing
+        /// The **Update Power BI Workspace Collection** operation updates an existing
         /// Power BI Workspace Collection with the specified properties.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -874,14 +875,14 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Delete Power BI Workspace Collection operation deletes a Power BI
+        /// The **Delete Power BI Workspace Collection** operation deletes a Power BI
         /// Workspace Collection.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -997,7 +998,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 202 && (int)_statusCode != 204 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 409 && (int)_statusCode != 503)
+            if ((int)_statusCode != 202 && (int)_statusCode != 204 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
@@ -1034,9 +1035,9 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Check Power BI Workspace Collection Name Availability operation checks
-        /// that the specified Power BI Workspace Collection name is valid and not in
-        /// use.
+        /// The **Check Power BI Workspace Collection Name Availability** operation
+        /// checks that the specified Power BI Workspace Collection name is valid and
+        /// not in use.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
@@ -1059,7 +1060,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<CheckNameResponse>> CheckWorkspaceCollectionAvailabilityWithHttpMessagesAsync(string subscriptionId, string location, string apiVersion, CheckNameRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<CheckNameResponse>> CheckNameAvailabilityWithHttpMessagesAsync(string subscriptionId, string location, string apiVersion, CheckNameRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1089,7 +1090,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 tracingParameters.Add("apiVersion", apiVersion);
                 tracingParameters.Add("body", body);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "CheckWorkspaceCollectionAvailability", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "CheckNameAvailability", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.BaseUri.AbsoluteUri;
@@ -1231,14 +1232,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Get Power BI Workspace Collections operation retrieves all existing
-        /// Power BI Workspace Collections in the specified resource group.
+        /// The **Get Power BI Workspace Collections in Resource Group** operation
+        /// retrieves all existing Power BI Workspace Collections in the specified
+        /// resource group.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='apiVersion'>
         /// Azure API version
@@ -1252,7 +1254,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<AzureArrayWorkspaceCollection>> GetWorkspacesCollectionsByResourceGroupWithHttpMessagesAsync(string subscriptionId, string resourceGroupName, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<WorkspaceCollectionList>> GetWorkspacesCollectionsInResourceGroupWithHttpMessagesAsync(string subscriptionId, string resourceGroupName, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1277,7 +1279,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 tracingParameters.Add("resourceGroupName", resourceGroupName);
                 tracingParameters.Add("apiVersion", apiVersion);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetWorkspacesCollectionsByResourceGroup", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetWorkspacesCollectionsInResourceGroup", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.BaseUri.AbsoluteUri;
@@ -1345,7 +1347,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -1380,7 +1382,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 throw ex;
             }
             // Create Result
-            var _result = new AzureOperationResponse<AzureArrayWorkspaceCollection>();
+            var _result = new AzureOperationResponse<WorkspaceCollectionList>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             if (_httpResponse.Headers.Contains("x-ms-request-id"))
@@ -1393,7 +1395,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = SafeJsonConvert.DeserializeObject<AzureArrayWorkspaceCollection>(_responseContent, this.DeserializationSettings);
+                    _result.Body = SafeJsonConvert.DeserializeObject<WorkspaceCollectionList>(_responseContent, this.DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {
@@ -1413,8 +1415,9 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Get Power BI Workspace Collections operation retrieves all existing
-        /// Power BI Workspace Collections in the specified subscription.
+        /// The **Get Power BI Workspace Collections in Subscription** operation
+        /// retrieves all existing Power BI Workspace Collections in the specified
+        /// subscription.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
@@ -1431,7 +1434,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<AzureArrayWorkspaceCollection>> GetWorkspacesCollectionsBySubscriptionWithHttpMessagesAsync(string subscriptionId, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<WorkspaceCollectionList>> GetWorkspacesCollectionsInSubscriptionWithHttpMessagesAsync(string subscriptionId, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1451,7 +1454,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("apiVersion", apiVersion);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetWorkspacesCollectionsBySubscription", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetWorkspacesCollectionsInSubscription", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.BaseUri.AbsoluteUri;
@@ -1518,7 +1521,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -1553,7 +1556,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 throw ex;
             }
             // Create Result
-            var _result = new AzureOperationResponse<AzureArrayWorkspaceCollection>();
+            var _result = new AzureOperationResponse<WorkspaceCollectionList>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             if (_httpResponse.Headers.Contains("x-ms-request-id"))
@@ -1566,7 +1569,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = SafeJsonConvert.DeserializeObject<AzureArrayWorkspaceCollection>(_responseContent, this.DeserializationSettings);
+                    _result.Body = SafeJsonConvert.DeserializeObject<WorkspaceCollectionList>(_responseContent, this.DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {
@@ -1586,7 +1589,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The List Power BI Workspace Collection Keys operation retrieves the
+        /// The **List Power BI Workspace Collection Keys** operation retrieves the
         /// primary and secondary access keys for the specified Power BI Workspace
         /// Collection.
         /// </summary>
@@ -1594,7 +1597,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -1710,7 +1713,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -1778,15 +1781,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Regenerate Power BI Workspace Collection Key operation regenerates the
-        /// primary or secondary access key for the specified Power BI Workspace
+        /// The **Regenerate Power BI Workspace Collection Key** operation regenerates
+        /// the primary or secondary access key for the specified Power BI Workspace
         /// Collection.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -1795,7 +1798,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// Azure API version
         /// </param>
         /// <param name='body'>
-        /// Access Key to regenerate
+        /// Access key to regenerate
         /// </param>
         /// <param name='customHeaders'>
         /// Headers that will be added to request.
@@ -1916,7 +1919,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -1984,8 +1987,8 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Get Available Operations operation indicates which operations can be
-        /// performed by the Power BI Resource Provider.
+        /// The **Get Available Operations** operation indicates which operations can
+        /// be performed by the Power BI Resource Provider.
         /// </summary>
         /// <param name='apiVersion'>
         /// Azure API version
@@ -1999,7 +2002,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<AzureArrayOperation>> GetAvailableOperationsWithHttpMessagesAsync(string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<OperationList>> GetAvailableOperationsWithHttpMessagesAsync(string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (apiVersion == null)
             {
@@ -2115,7 +2118,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 throw ex;
             }
             // Create Result
-            var _result = new AzureOperationResponse<AzureArrayOperation>();
+            var _result = new AzureOperationResponse<OperationList>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             if (_httpResponse.Headers.Contains("x-ms-request-id"))
@@ -2128,7 +2131,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = SafeJsonConvert.DeserializeObject<AzureArrayOperation>(_responseContent, this.DeserializationSettings);
+                    _result.Body = SafeJsonConvert.DeserializeObject<OperationList>(_responseContent, this.DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {
@@ -2148,7 +2151,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Get Power BI Workspace Collection Long Running Operation Status
+        /// The **Get Power BI Workspace Collection Long Running Operation Status**
         /// operation indicates the status for a Power BI Workspace Collection
         /// operation (delete, etc.).
         /// </summary>
@@ -2309,14 +2312,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Get Power BI Workspaces in Workspace Collection operation retrieves
-        /// all existing Power BI Workspaces in the specified Workspace Collection.
+        /// The **Get Power BI Workspaces in Workspace Collection** operation
+        /// retrieves all existing Power BI Workspaces in the specified Workspace
+        /// Collection.
         /// </summary>
         /// <param name='subscriptionId'>
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='workspaceCollectionName'>
         /// Power BI Embedded workspace collection name
@@ -2333,7 +2337,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<AzureArrayWorkspace>> GetWorkspacesWithHttpMessagesAsync(string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<WorkspaceList>> GetWorkspacesWithHttpMessagesAsync(string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2432,7 +2436,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             HttpStatusCode _statusCode = _httpResponse.StatusCode;
             cancellationToken.ThrowIfCancellationRequested();
             string _responseContent = null;
-            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 408 && (int)_statusCode != 503)
+            if ((int)_statusCode != 200 && (int)_statusCode != 400 && (int)_statusCode != 403 && (int)_statusCode != 404 && (int)_statusCode != 408 && (int)_statusCode != 503)
             {
                 var ex = new CloudException(string.Format("Operation returned an invalid status code '{0}'", _statusCode));
                 try
@@ -2467,7 +2471,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 throw ex;
             }
             // Create Result
-            var _result = new AzureOperationResponse<AzureArrayWorkspace>();
+            var _result = new AzureOperationResponse<WorkspaceList>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             if (_httpResponse.Headers.Contains("x-ms-request-id"))
@@ -2480,7 +2484,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = SafeJsonConvert.DeserializeObject<AzureArrayWorkspace>(_responseContent, this.DeserializationSettings);
+                    _result.Body = SafeJsonConvert.DeserializeObject<WorkspaceList>(_responseContent, this.DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {
@@ -2500,7 +2504,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         }
 
         /// <summary>
-        /// The Migrate Power BI Workspace Collection operation moves an existing
+        /// The **Migrate Power BI Workspace Collection** operation moves an existing
         /// Power BI Workspace Collection to a different resource group and/or
         /// subscription.
         /// </summary>
@@ -2508,13 +2512,13 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
         /// Azure subscription id
         /// </param>
         /// <param name='resourceGroupName'>
-        /// The Azure resource group
+        /// Azure resource group
         /// </param>
         /// <param name='apiVersion'>
         /// Azure API version
         /// </param>
         /// <param name='body'>
-        /// The workspace migration request
+        /// Workspace migration request
         /// </param>
         /// <param name='customHeaders'>
         /// Headers that will be added to request.

@@ -26,13 +26,13 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         }
 
         /// <summary>
-        /// SKU name
+        /// SKU name. Possible values include: 'S1'
         /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
         /// <summary>
-        /// SKU tier
+        /// SKU tier. Possible values include: 'Standard'
         /// </summary>
         [JsonProperty(PropertyName = "tier")]
         public string Tier { get; set; }

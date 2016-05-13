@@ -9,17 +9,17 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
     using Microsoft.Rest.Serialization;
     using Microsoft.Rest.Azure;
 
-    public partial class AzureArrayOperation
+    public partial class WorkspaceCollectionList
     {
         /// <summary>
-        /// Initializes a new instance of the AzureArrayOperation class.
+        /// Initializes a new instance of the WorkspaceCollectionList class.
         /// </summary>
-        public AzureArrayOperation() { }
+        public WorkspaceCollectionList() { }
 
         /// <summary>
-        /// Initializes a new instance of the AzureArrayOperation class.
+        /// Initializes a new instance of the WorkspaceCollectionList class.
         /// </summary>
-        public AzureArrayOperation(IList<Operation> value = default(IList<Operation>))
+        public WorkspaceCollectionList(IList<WorkspaceCollection> value = default(IList<WorkspaceCollection>))
         {
             Value = value;
         }
@@ -27,7 +27,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "value")]
-        public IList<Operation> Value { get; set; }
+        public IList<WorkspaceCollection> Value { get; set; }
 
     }
 }

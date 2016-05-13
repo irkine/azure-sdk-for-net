@@ -28,13 +28,13 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         }
 
         /// <summary>
-        /// Access Key 1
+        /// Access key 1
         /// </summary>
         [JsonProperty(PropertyName = "key1")]
         public string Key1 { get; set; }
 
         /// <summary>
-        /// Access Key 2
+        /// Access key 2
         /// </summary>
         [JsonProperty(PropertyName = "key2")]
         public string Key2 { get; set; }

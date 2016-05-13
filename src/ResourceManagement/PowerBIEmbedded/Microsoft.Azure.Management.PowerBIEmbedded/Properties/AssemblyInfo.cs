@@ -16,8 +16,8 @@
 using System.Reflection;
 using System.Resources;
 
-[assembly: AssemblyTitle("Microsoft Azure Storage Management Library")]
-[assembly: AssemblyDescription("Provides Microsoft Azure Storage management functions for managing the Microsoft Azure Storage service.")]
+[assembly: AssemblyTitle("Microsoft Azure Power BI Embedded Management Library")]
+[assembly: AssemblyDescription("Provides Microsoft Azure Power BI Embedded management functions for managing the Microsoft Azure Power BI Embedded.")]
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

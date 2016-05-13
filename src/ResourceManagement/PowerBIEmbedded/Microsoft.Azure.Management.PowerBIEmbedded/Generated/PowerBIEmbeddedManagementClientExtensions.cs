@@ -16,7 +16,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
     public static partial class PowerBIEmbeddedManagementClientExtensions
     {
             /// <summary>
-            /// The Get Power BI Workspace Collection operation retrieves an existing
+            /// The **Get Power BI Workspace Collection** operation retrieves an existing
             /// Power BI Workspace Collection.
             /// </summary>
             /// <param name='operations'>
@@ -26,7 +26,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -40,7 +40,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collection operation retrieves an existing
+            /// The **Get Power BI Workspace Collection** operation retrieves an existing
             /// Power BI Workspace Collection.
             /// </summary>
             /// <param name='operations'>
@@ -50,7 +50,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -70,10 +70,11 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Create Power BI Workspace Collection operation creates a new Power BI
-            /// Workspace Collection with the specified properties. A Power BI Workspace
-            /// Collection contains one or more Power BI Workspaces and can be used to
-            /// provision keys that provide API access to those Power BI Workspaces.
+            /// The **Create Power BI Workspace Collection** operation creates a new Power
+            /// BI Workspace Collection with the specified properties. A Power BI
+            /// Workspace Collection contains one or more Power BI Workspaces and can be
+            /// used to provision keys that provide API access to those Power BI
+            /// Workspaces.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -82,7 +83,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -99,10 +100,11 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Create Power BI Workspace Collection operation creates a new Power BI
-            /// Workspace Collection with the specified properties. A Power BI Workspace
-            /// Collection contains one or more Power BI Workspaces and can be used to
-            /// provision keys that provide API access to those Power BI Workspaces.
+            /// The **Create Power BI Workspace Collection** operation creates a new Power
+            /// BI Workspace Collection with the specified properties. A Power BI
+            /// Workspace Collection contains one or more Power BI Workspaces and can be
+            /// used to provision keys that provide API access to those Power BI
+            /// Workspaces.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -111,7 +113,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -134,7 +136,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Update Power BI Workspace Collection operation updates an existing
+            /// The **Update Power BI Workspace Collection** operation updates an existing
             /// Power BI Workspace Collection with the specified properties.
             /// </summary>
             /// <param name='operations'>
@@ -144,7 +146,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -161,7 +163,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Update Power BI Workspace Collection operation updates an existing
+            /// The **Update Power BI Workspace Collection** operation updates an existing
             /// Power BI Workspace Collection with the specified properties.
             /// </summary>
             /// <param name='operations'>
@@ -171,7 +173,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -194,7 +196,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Delete Power BI Workspace Collection operation deletes a Power BI
+            /// The **Delete Power BI Workspace Collection** operation deletes a Power BI
             /// Workspace Collection.
             /// </summary>
             /// <param name='operations'>
@@ -204,7 +206,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -218,7 +220,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Delete Power BI Workspace Collection operation deletes a Power BI
+            /// The **Delete Power BI Workspace Collection** operation deletes a Power BI
             /// Workspace Collection.
             /// </summary>
             /// <param name='operations'>
@@ -228,7 +230,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -245,9 +247,9 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Check Power BI Workspace Collection Name Availability operation checks
-            /// that the specified Power BI Workspace Collection name is valid and not in
-            /// use.
+            /// The **Check Power BI Workspace Collection Name Availability** operation
+            /// checks that the specified Power BI Workspace Collection name is valid and
+            /// not in use.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -264,15 +266,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='body'>
             /// Check name availability request
             /// </param>
-            public static CheckNameResponse CheckWorkspaceCollectionAvailability(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string location, string apiVersion, CheckNameRequest body)
+            public static CheckNameResponse CheckNameAvailability(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string location, string apiVersion, CheckNameRequest body)
             {
-                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).CheckWorkspaceCollectionAvailabilityAsync(subscriptionId, location, apiVersion, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).CheckNameAvailabilityAsync(subscriptionId, location, apiVersion, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
-            /// The Check Power BI Workspace Collection Name Availability operation checks
-            /// that the specified Power BI Workspace Collection name is valid and not in
-            /// use.
+            /// The **Check Power BI Workspace Collection Name Availability** operation
+            /// checks that the specified Power BI Workspace Collection name is valid and
+            /// not in use.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -292,17 +294,18 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CheckNameResponse> CheckWorkspaceCollectionAvailabilityAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string location, string apiVersion, CheckNameRequest body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<CheckNameResponse> CheckNameAvailabilityAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string location, string apiVersion, CheckNameRequest body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.CheckWorkspaceCollectionAvailabilityWithHttpMessagesAsync(subscriptionId, location, apiVersion, body, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.CheckNameAvailabilityWithHttpMessagesAsync(subscriptionId, location, apiVersion, body, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collections operation retrieves all existing
-            /// Power BI Workspace Collections in the specified resource group.
+            /// The **Get Power BI Workspace Collections in Resource Group** operation
+            /// retrieves all existing Power BI Workspace Collections in the specified
+            /// resource group.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -311,19 +314,20 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
-            public static AzureArrayWorkspaceCollection GetWorkspacesCollectionsByResourceGroup(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string apiVersion)
+            public static WorkspaceCollectionList GetWorkspacesCollectionsInResourceGroup(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string apiVersion)
             {
-                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetWorkspacesCollectionsByResourceGroupAsync(subscriptionId, resourceGroupName, apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetWorkspacesCollectionsInResourceGroupAsync(subscriptionId, resourceGroupName, apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collections operation retrieves all existing
-            /// Power BI Workspace Collections in the specified resource group.
+            /// The **Get Power BI Workspace Collections in Resource Group** operation
+            /// retrieves all existing Power BI Workspace Collections in the specified
+            /// resource group.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -332,7 +336,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='apiVersion'>
             /// Azure API version
@@ -340,17 +344,18 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<AzureArrayWorkspaceCollection> GetWorkspacesCollectionsByResourceGroupAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<WorkspaceCollectionList> GetWorkspacesCollectionsInResourceGroupAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWorkspacesCollectionsByResourceGroupWithHttpMessagesAsync(subscriptionId, resourceGroupName, apiVersion, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWorkspacesCollectionsInResourceGroupWithHttpMessagesAsync(subscriptionId, resourceGroupName, apiVersion, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collections operation retrieves all existing
-            /// Power BI Workspace Collections in the specified subscription.
+            /// The **Get Power BI Workspace Collections in Subscription** operation
+            /// retrieves all existing Power BI Workspace Collections in the specified
+            /// subscription.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -361,14 +366,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
-            public static AzureArrayWorkspaceCollection GetWorkspacesCollectionsBySubscription(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string apiVersion)
+            public static WorkspaceCollectionList GetWorkspacesCollectionsInSubscription(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string apiVersion)
             {
-                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetWorkspacesCollectionsBySubscriptionAsync(subscriptionId, apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetWorkspacesCollectionsInSubscriptionAsync(subscriptionId, apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collections operation retrieves all existing
-            /// Power BI Workspace Collections in the specified subscription.
+            /// The **Get Power BI Workspace Collections in Subscription** operation
+            /// retrieves all existing Power BI Workspace Collections in the specified
+            /// subscription.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -382,16 +388,16 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<AzureArrayWorkspaceCollection> GetWorkspacesCollectionsBySubscriptionAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<WorkspaceCollectionList> GetWorkspacesCollectionsInSubscriptionAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWorkspacesCollectionsBySubscriptionWithHttpMessagesAsync(subscriptionId, apiVersion, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWorkspacesCollectionsInSubscriptionWithHttpMessagesAsync(subscriptionId, apiVersion, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
             }
 
             /// <summary>
-            /// The List Power BI Workspace Collection Keys operation retrieves the
+            /// The **List Power BI Workspace Collection Keys** operation retrieves the
             /// primary and secondary access keys for the specified Power BI Workspace
             /// Collection.
             /// </summary>
@@ -402,7 +408,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -416,7 +422,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The List Power BI Workspace Collection Keys operation retrieves the
+            /// The **List Power BI Workspace Collection Keys** operation retrieves the
             /// primary and secondary access keys for the specified Power BI Workspace
             /// Collection.
             /// </summary>
@@ -427,7 +433,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -447,8 +453,8 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Regenerate Power BI Workspace Collection Key operation regenerates the
-            /// primary or secondary access key for the specified Power BI Workspace
+            /// The **Regenerate Power BI Workspace Collection Key** operation regenerates
+            /// the primary or secondary access key for the specified Power BI Workspace
             /// Collection.
             /// </summary>
             /// <param name='operations'>
@@ -458,7 +464,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -467,7 +473,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure API version
             /// </param>
             /// <param name='body'>
-            /// Access Key to regenerate
+            /// Access key to regenerate
             /// </param>
             public static WorkspaceCollectionAccessKeys RegenerateWorkspaceCollectionAccessKey(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion, WorkspaceCollectionAccessKey body)
             {
@@ -475,8 +481,8 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Regenerate Power BI Workspace Collection Key operation regenerates the
-            /// primary or secondary access key for the specified Power BI Workspace
+            /// The **Regenerate Power BI Workspace Collection Key** operation regenerates
+            /// the primary or secondary access key for the specified Power BI Workspace
             /// Collection.
             /// </summary>
             /// <param name='operations'>
@@ -486,7 +492,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -495,7 +501,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure API version
             /// </param>
             /// <param name='body'>
-            /// Access Key to regenerate
+            /// Access key to regenerate
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -509,8 +515,8 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Get Available Operations operation indicates which operations can be
-            /// performed by the Power BI Resource Provider.
+            /// The **Get Available Operations** operation indicates which operations can
+            /// be performed by the Power BI Resource Provider.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -518,14 +524,14 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
-            public static AzureArrayOperation GetAvailableOperations(this IPowerBIEmbeddedManagementClient operations, string apiVersion)
+            public static OperationList GetAvailableOperations(this IPowerBIEmbeddedManagementClient operations, string apiVersion)
             {
                 return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetAvailableOperationsAsync(apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
-            /// The Get Available Operations operation indicates which operations can be
-            /// performed by the Power BI Resource Provider.
+            /// The **Get Available Operations** operation indicates which operations can
+            /// be performed by the Power BI Resource Provider.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -536,7 +542,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<AzureArrayOperation> GetAvailableOperationsAsync(this IPowerBIEmbeddedManagementClient operations, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<OperationList> GetAvailableOperationsAsync(this IPowerBIEmbeddedManagementClient operations, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.GetAvailableOperationsWithHttpMessagesAsync(apiVersion, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -545,7 +551,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collection Long Running Operation Status
+            /// The **Get Power BI Workspace Collection Long Running Operation Status**
             /// operation indicates the status for a Power BI Workspace Collection
             /// operation (delete, etc.).
             /// </summary>
@@ -570,7 +576,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Get Power BI Workspace Collection Long Running Operation Status
+            /// The **Get Power BI Workspace Collection Long Running Operation Status**
             /// operation indicates the status for a Power BI Workspace Collection
             /// operation (delete, etc.).
             /// </summary>
@@ -598,8 +604,9 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Get Power BI Workspaces in Workspace Collection operation retrieves
-            /// all existing Power BI Workspaces in the specified Workspace Collection.
+            /// The **Get Power BI Workspaces in Workspace Collection** operation
+            /// retrieves all existing Power BI Workspaces in the specified Workspace
+            /// Collection.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -608,7 +615,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -616,14 +623,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
-            public static AzureArrayWorkspace GetWorkspaces(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion)
+            public static WorkspaceList GetWorkspaces(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion)
             {
                 return Task.Factory.StartNew(s => ((IPowerBIEmbeddedManagementClient)s).GetWorkspacesAsync(subscriptionId, resourceGroupName, workspaceCollectionName, apiVersion), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
-            /// The Get Power BI Workspaces in Workspace Collection operation retrieves
-            /// all existing Power BI Workspaces in the specified Workspace Collection.
+            /// The **Get Power BI Workspaces in Workspace Collection** operation
+            /// retrieves all existing Power BI Workspaces in the specified Workspace
+            /// Collection.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -632,7 +640,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='workspaceCollectionName'>
             /// Power BI Embedded workspace collection name
@@ -643,7 +651,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<AzureArrayWorkspace> GetWorkspacesAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<WorkspaceList> GetWorkspacesAsync(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string workspaceCollectionName, string apiVersion, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.GetWorkspacesWithHttpMessagesAsync(subscriptionId, resourceGroupName, workspaceCollectionName, apiVersion, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -652,7 +660,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Migrate Power BI Workspace Collection operation moves an existing
+            /// The **Migrate Power BI Workspace Collection** operation moves an existing
             /// Power BI Workspace Collection to a different resource group and/or
             /// subscription.
             /// </summary>
@@ -663,13 +671,13 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
             /// <param name='body'>
-            /// The workspace migration request
+            /// Workspace migration request
             /// </param>
             public static void MigrateWorkspaceCollection(this IPowerBIEmbeddedManagementClient operations, string subscriptionId, string resourceGroupName, string apiVersion, MigrateWorkspaceCollectionRequest body)
             {
@@ -677,7 +685,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             }
 
             /// <summary>
-            /// The Migrate Power BI Workspace Collection operation moves an existing
+            /// The **Migrate Power BI Workspace Collection** operation moves an existing
             /// Power BI Workspace Collection to a different resource group and/or
             /// subscription.
             /// </summary>
@@ -688,13 +696,13 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded
             /// Azure subscription id
             /// </param>
             /// <param name='resourceGroupName'>
-            /// The Azure resource group
+            /// Azure resource group
             /// </param>
             /// <param name='apiVersion'>
             /// Azure API version
             /// </param>
             /// <param name='body'>
-            /// The workspace migration request
+            /// Workspace migration request
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.

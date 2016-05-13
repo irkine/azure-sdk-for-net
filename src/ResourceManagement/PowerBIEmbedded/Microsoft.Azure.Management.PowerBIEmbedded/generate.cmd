@@ -6,7 +6,7 @@
 @echo off
 set autoRestVersion=0.16.0-Nightly20160406
 if  "%1" == "" (
-    set specFile="C:\pbi\SDKs\azure-rest-api-specs\arm-powerbiembedded\2016-01-29\swagger\powerbiembedded.json"
+    set specFile="https://raw.githubusercontent.com/wbreza/azure-rest-api-specs/powerbi-embedded/arm-powerbiembedded/2016-01-29/swagger/powerbiembedded.json"
 ) else (
     set specFile="%1"
 )
