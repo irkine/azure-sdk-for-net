@@ -15,16 +15,24 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// Initializes a new instance of the UpdateWorkspaceCollectionRequest
         /// class.
         /// </summary>
-        public UpdateWorkspaceCollectionRequest() { }
+        public UpdateWorkspaceCollectionRequest()
+        {
+        }
 
         /// <summary>
         /// Initializes a new instance of the UpdateWorkspaceCollectionRequest
         /// class.
         /// </summary>
-        public UpdateWorkspaceCollectionRequest(IDictionary<string, string> tags = default(IDictionary<string, string>), AzureSku sku = default(AzureSku))
+        public UpdateWorkspaceCollectionRequest(IDictionary<string, string> tags = default(IDictionary<string, string>))
         {
             Tags = tags;
-            Sku = sku;
+        }
+        /// <summary>
+        /// Static constructor for UpdateWorkspaceCollectionRequest class.
+        /// </summary>
+        static UpdateWorkspaceCollectionRequest()
+        {
+            Sku = new AzureSku();
         }
 
         /// <summary>
@@ -35,7 +43,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sku")]
-        public AzureSku Sku { get; set; }
+        public static AzureSku Sku { get; private set; }
 
     }
 }

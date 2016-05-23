@@ -19,14 +19,16 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// Initializes a new instance of the Operation class.
         /// </summary>
-        public Operation(string name = default(string), OperationDisplay display = default(OperationDisplay))
+        public Operation(string name = default(string), Display display = default(Display))
         {
             Name = name;
             Display = display;
         }
 
         /// <summary>
-        /// Operation name
+        /// The name of the operation being performed on this particular
+        /// object. It should match the action name that appears in RBAC /
+        /// the event service.
         /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
@@ -34,7 +36,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "display")]
-        public OperationDisplay Display { get; set; }
+        public Display Display { get; set; }
 
     }
 }

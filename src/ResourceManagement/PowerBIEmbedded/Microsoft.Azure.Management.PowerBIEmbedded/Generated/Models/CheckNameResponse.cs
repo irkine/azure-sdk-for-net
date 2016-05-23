@@ -34,15 +34,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         public bool? NameAvailable { get; set; }
 
         /// <summary>
-        /// Specifies the reason that a Power BI Workspace Collection name
-        /// cannot be used. Property is not set if the specified name is
-        /// available.
+        /// Reason why the workspace collection name cannot be used. Possible
+        /// values include: 'Unavailable', 'Invalid'
         /// </summary>
         [JsonProperty(PropertyName = "reason")]
         public string Reason { get; set; }
 
         /// <summary>
-        /// Indicates why the specified name is unavailable.
+        /// Message indicating an unavailable name due to a conflict or a
+        /// description of the naming rules that are violated.
         /// </summary>
         [JsonProperty(PropertyName = "message")]
         public string Message { get; set; }

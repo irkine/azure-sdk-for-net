@@ -17,25 +17,25 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         public AzureSku() { }
 
         /// <summary>
-        /// Initializes a new instance of the AzureSku class.
+        /// Static constructor for AzureSku class.
         /// </summary>
-        public AzureSku(string name = default(string), string tier = default(string))
+        static AzureSku()
         {
-            Name = name;
-            Tier = tier;
+            Name = "S1";
+            Tier = "Standard";
         }
 
         /// <summary>
-        /// SKU name. Possible values include: 'S1'
+        /// SKU name
         /// </summary>
         [JsonProperty(PropertyName = "name")]
-        public string Name { get; set; }
+        public static string Name { get; private set; }
 
         /// <summary>
-        /// SKU tier. Possible values include: 'Standard'
+        /// SKU tier
         /// </summary>
         [JsonProperty(PropertyName = "tier")]
-        public string Tier { get; set; }
+        public static string Tier { get; private set; }
 
     }
 }

@@ -3,10 +3,12 @@
 :: Copyright (C) Microsoft Corporation. All Rights Reserved.
 ::
 
+:: https://github.com/Azure/azure-rest-api-specs/commits/master
+
 @echo off
 set autoRestVersion=0.16.0-Nightly20160406
 if  "%1" == "" (
-    set specFile="https://raw.githubusercontent.com/wbreza/azure-rest-api-specs/powerbi-embedded/arm-powerbiembedded/2016-01-29/swagger/powerbiembedded.json"
+    set specFile="https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-powerbiembedded/2016-01-29/swagger/powerbiembedded.json"
 ) else (
     set specFile="%1"
 )

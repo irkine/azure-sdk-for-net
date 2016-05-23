@@ -21,7 +21,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// Initializes a new instance of the WorkspaceCollectionAccessKey
         /// class.
         /// </summary>
-        public WorkspaceCollectionAccessKey(string keyName = default(string))
+        public WorkspaceCollectionAccessKey(AccessKeyName? keyName = default(AccessKeyName?))
         {
             KeyName = keyName;
         }
@@ -30,7 +30,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// Key name. Possible values include: 'key1', 'key2'
         /// </summary>
         [JsonProperty(PropertyName = "keyName")]
-        public string KeyName { get; set; }
+        public AccessKeyName? KeyName { get; set; }
 
     }
 }

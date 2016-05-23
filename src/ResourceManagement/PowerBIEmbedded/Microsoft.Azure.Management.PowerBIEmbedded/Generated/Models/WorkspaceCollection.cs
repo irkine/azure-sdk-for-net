@@ -14,20 +14,28 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// Initializes a new instance of the WorkspaceCollection class.
         /// </summary>
-        public WorkspaceCollection() { }
+        public WorkspaceCollection()
+        {
+        }
 
         /// <summary>
         /// Initializes a new instance of the WorkspaceCollection class.
         /// </summary>
-        public WorkspaceCollection(string id = default(string), string name = default(string), string type = default(string), string location = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), AzureSku sku = default(AzureSku), object properties = default(object))
+        public WorkspaceCollection(string id = default(string), string name = default(string), string type = default(string), string location = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), object properties = default(object))
         {
             Id = id;
             Name = name;
             Type = type;
             Location = location;
             Tags = tags;
-            Sku = sku;
             Properties = properties;
+        }
+        /// <summary>
+        /// Static constructor for WorkspaceCollection class.
+        /// </summary>
+        static WorkspaceCollection()
+        {
+            Sku = new AzureSku();
         }
 
         /// <summary>
@@ -60,15 +68,15 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         public IDictionary<string, string> Tags { get; set; }
 
         /// <summary>
-        /// </summary>
-        [JsonProperty(PropertyName = "sku")]
-        public AzureSku Sku { get; set; }
-
-        /// <summary>
         /// Properties
         /// </summary>
         [JsonProperty(PropertyName = "properties")]
         public object Properties { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "sku")]
+        public static AzureSku Sku { get; private set; }
 
     }
 }

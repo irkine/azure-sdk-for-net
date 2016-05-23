@@ -15,17 +15,25 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// Initializes a new instance of the CreateWorkspaceCollectionRequest
         /// class.
         /// </summary>
-        public CreateWorkspaceCollectionRequest() { }
+        public CreateWorkspaceCollectionRequest()
+        {
+        }
 
         /// <summary>
         /// Initializes a new instance of the CreateWorkspaceCollectionRequest
         /// class.
         /// </summary>
-        public CreateWorkspaceCollectionRequest(string location = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), AzureSku sku = default(AzureSku))
+        public CreateWorkspaceCollectionRequest(string location = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>))
         {
             Location = location;
             Tags = tags;
-            Sku = sku;
+        }
+        /// <summary>
+        /// Static constructor for CreateWorkspaceCollectionRequest class.
+        /// </summary>
+        static CreateWorkspaceCollectionRequest()
+        {
+            Sku = new AzureSku();
         }
 
         /// <summary>
@@ -42,7 +50,7 @@ namespace Microsoft.Azure.Management.PowerBIEmbedded.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sku")]
-        public AzureSku Sku { get; set; }
+        public static AzureSku Sku { get; private set; }
 
     }
 }
