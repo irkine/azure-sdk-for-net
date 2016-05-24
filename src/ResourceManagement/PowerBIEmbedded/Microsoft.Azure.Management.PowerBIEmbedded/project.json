@@ -36,6 +36,7 @@
       }
     },
     ".NETPortable,Version=v4.5,Profile=Profile111": {
+       "compilationOptions": { "define": [ "PORTABLE" ] },
       "frameworkAssemblies": {
         "System.Collections": { "type": "build" },
         "System.Linq": { "type": "build" },
